@@ -96,7 +96,7 @@ instr_mem.hex
 Example instructions:
 
 
-| Machine Code |  Assembly Instruction    |                 Description                             |
+| Machine Code |  Assembly Instruction    |              Description                                |
 |  ----------  | ------------------------ | ------------------------------------------------------- |
 |  `00000093`  | `addi x1, x0, 0`         | Initialize register **x1 = 0**                          |
 |  `00500113`  | `addi x2, x0, 5`         | Load constant **5 into x2**                             |

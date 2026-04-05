@@ -1,11 +1,10 @@
 // Program Counter Adder
 
-module PC_adder(pc,nxt_pc);
-    input clk,rst;
+module PC_adder(pc,pcPlus4);
     input  [31:0] pc;
-    output [31:0] nxt_pc;
+    output [31:0] pcPlus4;
 
-    assign nxt_pc=pc+4;
+    assign pcPlus4=pc+4;
 
 endmodule
 

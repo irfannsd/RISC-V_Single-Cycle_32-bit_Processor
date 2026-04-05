@@ -95,21 +95,18 @@ instr_mem.hex
 
 Example instructions:
 
- Machine Code    Assembly Instruction                      Description
 
-  
-
-|            |                          |                                                         |
-| ---------- | ------------------------ | ------------------------------------------------------- |
-| `00000093` | `addi x1, x0, 0`         | Initialize register **x1 = 0**                          |
-| `00500113` | `addi x2, x0, 5`         | Load constant **5 into x2**                             |
-| `002081b3` | `add x3, x1, x2`         | Add **x1 + x2** and store result in **x3**              |
-| `00310023` | `sw x3, 0(x2)`           | Store value of **x3 into memory address (x2 + 0)**      |
-| `00010183` | `lw x3, 0(x2)`           | Load value from **memory address (x2 + 0)** into **x3** |
-| `00118213` | `addi x4, x3, 1`         | Add **1 to x3** and store result in **x4**              |
-| `0041a063` | `beq x3, x4, label`      | Branch to **label** if **x3 == x4**                     |
-| `00200293` | `addi x5, x0, 2`         | Load constant **2 into x5**                             |
-| `00000013` | `nop` (`addi x0, x0, 0`) | No operation — used to **terminate program**            |
+| Machine Code |  Assembly Instruction    |                 Description                             |
+|  ----------  | ------------------------ | ------------------------------------------------------- |
+|  `00000093`  | `addi x1, x0, 0`         | Initialize register **x1 = 0**                          |
+|  `00500113`  | `addi x2, x0, 5`         | Load constant **5 into x2**                             |
+|  `002081b3`  | `add x3, x1, x2`         | Add **x1 + x2** and store result in **x3**              |
+|  `00310023`  | `sw x3, 0(x2)`           | Store value of **x3 into memory address (x2 + 0)**      |
+|  `00010183`  | `lw x3, 0(x2)`           | Load value from **memory address (x2 + 0)** into **x3** |
+|  `00118213`  | `addi x4, x3, 1`         | Add **1 to x3** and store result in **x4**              |
+|  `0041a063`  | `beq x3, x4, label`      | Branch to **label** if **x3 == x4**                     |
+|  `00200293`  | `addi x5, x0, 2`         | Load constant **2 into x5**                             |
+|  `00000013`  | `nop` (`addi x0, x0, 0`) | No operation — used to **terminate program**            |
 
   
 

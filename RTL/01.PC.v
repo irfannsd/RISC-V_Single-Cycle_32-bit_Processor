@@ -1,17 +1,23 @@
 // Program Counter
 
-module program_counter(clk,rst,pc_in,pc_out);
+module PC (
+    input clk,              // clock
+    input rst,              // synchronous reset (active high)
+    input [31:0] pc_nxt,    // next PC value (PC+4 or branch target)
+    output reg [31:0] pc,    // current PC value → IMEM address
+    output [31:0] pc_plus_4
+);
 
-  input clk,rst;
-  input [31:0] pc_in;
-  output reg [31:0] pc_out;
+assign pc_plus_4 = pc + 32'd4;
 
-  always @(posedge clk,posedge rst)
-  begin
-    if(rst)
-      pc_out<={32{1'b0}};
-    else
-      pc_out<=pc_in;
-  end
+always @(posedge clk ) begin
+    if (rst) begin
+        pc <= 32'b0 ;      
+    end
+    else begin
+        pc <= pc_nxt ;
+    end
+end
 
+    
 endmodule

@@ -1,0 +1,10 @@
+RTL/01.PC.v
+RTL/02.Inst_Mem.v
+RTL/03.Register.v
+RTL/04.Immediate_Generate.v
+RTL/05.Control_Unit.v
+RTL/06.ALU.v
+RTL/07.Data_Memory.v
+RTL/08.Branch_Unit.v
+RTL/RiscV_Core.v
+Testbench/tb_riscv_core.v
